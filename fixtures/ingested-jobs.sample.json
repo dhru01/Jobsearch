@@ -1,0 +1,62 @@
+[
+  {
+    "source": "fixtures",
+    "sourceId": "fix-001",
+    "originalUrl": "https://example.com/jobs/fix-001",
+    "title": "Graduate Software Developer",
+    "company": "Harbour Ledger",
+    "description": "Build internal web tools for a Cape Town fintech team. Bachelor's degree and JavaScript required.",
+    "requirements": "Bachelor's degree\nJavaScript, React, Git",
+    "locationText": "Cape Town, Western Cape",
+    "postedAt": "2026-10-18T00:00:00.000Z",
+    "raw": {}
+  },
+  {
+    "source": "fixtures",
+    "sourceId": "fix-002",
+    "originalUrl": "https://example.com/jobs/fix-002",
+    "title": "Junior Full-Stack Developer",
+    "company": "Karoo Cloud",
+    "description": "Help ship a product used by Western Cape schools. At least 1 year of JavaScript experience.",
+    "requirements": "1 year JavaScript or Node experience",
+    "locationText": "Stellenbosch, Western Cape",
+    "postedAt": "2026-10-17T00:00:00.000Z",
+    "raw": {}
+  },
+  {
+    "source": "fixtures",
+    "sourceId": "fix-003",
+    "originalUrl": "https://example.com/jobs/fix-003",
+    "title": "Frontend Intern",
+    "company": "Aloe Interface",
+    "description": "Remote internship for graduates with HTML, CSS, and JavaScript coursework.",
+    "requirements": "Matric and programming coursework",
+    "locationText": "Remote — South Africa",
+    "postedAt": "2026-10-16T00:00:00.000Z",
+    "raw": {}
+  },
+  {
+    "source": "fixtures",
+    "sourceId": "fix-004",
+    "originalUrl": "https://example.com/jobs/fix-004",
+    "title": "Junior Data Analyst",
+    "company": "Highveld Insights",
+    "description": "Prepare weekly operating reports for retail clients in Gauteng. Bachelor's degree with SQL coursework.",
+    "requirements": "Bachelor's degree, SQL, Excel",
+    "locationText": "Johannesburg, Gauteng",
+    "postedAt": "2026-10-15T00:00:00.000Z",
+    "raw": {}
+  },
+  {
+    "source": "fixtures",
+    "sourceId": "fix-005",
+    "originalUrl": "https://example.com/jobs/fix-005",
+    "title": "Graduate Accountant",
+    "company": "Ridge and Co",
+    "description": "On-site graduate role in Pretoria. BCom Accounting or equivalent required.",
+    "requirements": "BCom Accounting",
+    "locationText": "Pretoria, Gauteng",
+    "postedAt": "2026-10-14T00:00:00.000Z",
+    "raw": {}
+  }
+]

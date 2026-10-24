@@ -3,24 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--max-http-header-size=65536' next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "NODE_OPTIONS='--max-http-header-size=65536' next start",
+    "lint": "eslint",
+    "test:score": "node --experimental-strip-types --test lib/matching/score.test.ts",
+    "test:jobs": "tsx --test lib/jobs/*.test.ts lib/profile/*.test.ts lib/labels.test.ts",
+    "test:rls": "supabase test db",
+    "ingest:jobs": "tsx --env-file=.env.local scripts/ingest-jobs.ts",
+    "ingest:jobs:fixtures": "tsx --env-file=.env.local scripts/ingest-jobs.ts --fixtures",
+    "apply:worker": "tsx --env-file=.env.local scripts/apply-worker.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
+    "apify-client": "^2.25.0",
+    "mammoth": "^1.13.0",
     "next": "16.4.0",
+    "pdfkit": "^0.20.2",
+    "playwright": "^1.64.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "resend": "^6.34.1",
+    "server-only": "^0.0.1",
+    "unpdf": "^1.9.1",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
+    "@types/pdfkit": "^0.17.7",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }

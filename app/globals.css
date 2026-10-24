@@ -1,26 +1,55 @@
 @import "tailwindcss";
+/* Fieldwork paper theme */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #f3ecdf;
+  --foreground: #1c1612;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: #f3ecdf;
+  --color-raised: #fffdf8;
+  --color-panel: #efe4d2;
+  --color-line: #e2d3bc;
+  --color-ink: #1c1612;
+  --color-muted: #6f655b;
+  --color-accent: #c2410c;
+  --color-accent-2: #9a3412;
+  --color-good: #1b5e45;
+  --color-good-bg: #e5f3eb;
+  --color-warn: #8a5a12;
+  --color-warn-bg: #f8edd8;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  overflow-x: clip;
+  background: var(--background);
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(900px 420px at 100% -10%, rgba(194, 65, 12, 0.12), transparent 55%),
+    var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: rgba(194, 65, 12, 0.22);
+  color: #1c1612;
+}
+
+:focus-visible {
+  outline: 2px solid #c2410c;
+  outline-offset: 3px;
 }
